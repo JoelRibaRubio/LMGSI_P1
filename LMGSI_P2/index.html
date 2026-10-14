@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleshome.css">
+    <title>The Movie Database (TMDB)</title>
+</head>
+<body>
+    <header>
+        <a href="https://www.themoviedb.org/?language=es" target="_blank">
+            <img id="logo" src="images/logo.svg" alt="Logo de la web.">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="search.html">Buscador</a></li>
+                <li><a href="contact.html">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>BUSCAR UNA PEL·LÍCULA</h1>
+            <p>Milions de títols, un sol cercador.</p>
+
+            <form id="search_movie" action="/search_movie" method="post">
+                <input type="text" id="search" name="search" placeholder="Cerca una pel·lícula, per exemple <<Spider-Man>>...">
+                <button type="submit">Cercar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Resultats</h2>
+
+            <article class="card_movie">
+                <div>
+                    <img class="movie_image" src="images/social_network.webp" alt="Poster de la pel·lícula (The Social Network)">
+                    <h3>The Social Network</h3>
+                    <p>2010</p>
+                </div>
+            </article>
+
+            <article class="card_movie">
+                <div>
+                    <img class="movie_image" src="images/dragonball.webp" alt="Poster de la pel·lícula (Dragon Ball Super: Broly)">
+                    <h3>Dragon Ball Super: Broly</h3>
+                    <p>2018</p>
+                </div>
+            </article>
+
+            <article class="card_movie">
+                <div>
+                    <img class="movie_image" src="images/spiderman.webp" alt="Poster de la pel·lícula (Spider-Man: Brand New Day)">
+                    <h3>Spider-Man: Brand New Day</h3>
+                    <p>2026</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>© 2026 The Movie Database - Maqueta de disseny</footer>
+</body>
+</html>
