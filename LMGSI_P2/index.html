@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styleshome.css">
     <title>The Movie Database (TMDB)</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="description" content="Aquesta web és una versió simplificada de TMDB.">
 </head>
 <body>
     <header>
@@ -14,8 +16,8 @@
 
         <nav>
             <ul>
-                <li><a href="search.html">Buscador</a></li>
-                <li><a href="contact.html">Contacte</a></li>
+                <li><a href="search.html" target="_blank">Buscador</a></li>
+                <li><a href="contact.html" target="_blank">Contacte</a></li>
             </ul>
         </nav>
     </header>
@@ -25,8 +27,8 @@
             <h1>BUSCAR UNA PEL·LÍCULA</h1>
             <p>Milions de títols, un sol cercador.</p>
 
-            <form id="search_movie" action="/search_movie" method="post">
-                <input type="text" id="search" name="search" placeholder="Cerca una pel·lícula, per exemple <<Spider-Man>>...">
+            <form id="search_movie" method="get" action="https://www.themoviedb.org/search">
+                <input type="search" id="query" name="query" placeholder="Cerca una pel·lícula, per exemple <<Spider-Man>>..." required>
                 <button type="submit">Cercar</button>
             </form>
         </section>

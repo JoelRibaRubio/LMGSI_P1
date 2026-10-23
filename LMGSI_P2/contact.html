@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylescontact.css">
+    <title>Contacte (TMDB)</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="description" content="Aquesta pàgina conté la secció de contacte de TMDB.">
+</head>
+<body>
+    <header>
+        <a href="https://www.themoviedb.org/?language=es" target="_blank">
+            <img id="logo" src="images/logo.svg" alt="Logo de la web.">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="search.html" target="_blank">Buscador</a></li>
+                <li><a href="contact.html" target="_blank">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>CONTACTE AMB NOSALTRES</h1>
+            <p>Tens algun dubte o suggeriment? Escriu-nos.</p>
+        </section>
+
+        <section>
+            <article id="aboutMe">
+                <div class="aboutMe_content">
+                    <img id="joelimage" src="images/joelriba.png" alt="Foto meva.">
+                    
+                    <h2>Joel Riba Rubio</h2>
+                    <h3>Alumne/a · Desenvolupament Web</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                </div>
+            </article>
+
+            <article id="contact_form">
+                <form method="post" action="mailto:2526_joel.riba@iticbcn.cat">
+                    <h2>Envia'ns un missatge</h2>
+
+                    <label for="fullname">Nom i cognoms</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="El teu nom complet" required>
+                    <br>
+
+                    <label for="email">Correu electrònic</label>
+                    <input type="email" id="email" name="email" placeholder="nom@exemple.cat" required>
+                    <br>
+
+                    <label for="subject">Assumpte</label>
+                    <input type="text" id="subject" name="subject" placeholder="Sobre què ens vols escriure?" required>
+                    <br>
+
+                    <label for="message">Missatge</label>
+                    <textarea id="message" name="message" placeholder="Escriu aqui el teu missatge..." required></textarea>
+                    <br>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <br>
+
+    <footer>© 2026 The Movie Database - Maqueta de disseny</footer>
+</body>
+</html>
