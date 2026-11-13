@@ -116,7 +116,7 @@ main {
     gap: 24px;
     padding-top: 20px;
     width: 100%;
-    max-width: 880px;
+    max-width: 820px;
     margin: 0 auto;
 }
 
@@ -185,6 +185,154 @@ footer {
 
 /* Individual styles for the contact page */
 
+.title-block {
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 48px;
+}
+
+.title-block h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.title-block p {
+    color: #A0C4DE;
+    margin-bottom: 20px;
+}
+
+#aboutMe {
+    background-color: #011627;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 480px;
+}
+
+#aboutMe-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
 #joelimage {
-    height: 200px;
+    display: block;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 40px auto 30px auto;
+}
+
+#aboutMe h2 {
+    background-color: #033158;
+    margin: 0;
+    padding: 24px 24px 4px 24px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+#aboutMe h3 {
+    background-color: #033158;
+    margin: 0;
+    padding: 3px 24px 16px 24px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #65a30d;
+}
+
+#aboutMe p {
+    background-color: #033158;
+    margin: 0;
+    padding: 0 24px 30px 24px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #a0c4de;
+}
+
+.contact-block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+#contact-form {
+    font-family: "Work Sans", sans-serif;
+    color: #ffffff;
+    width: 100%;
+    max-width: 480px;
+}
+
+#contact-form h2 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+#contact-form br {
+    display: none;
+}
+
+#contact-form label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    margin-bottom: 6px;
+}
+
+#contact-form input, #contact-form textarea {
+    display: block;
+    width: 100%;
+    background-color: #0b3954;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 13px 15px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+#contact-form input::placeholder, #contact-form textarea::placeholder {
+    color: #6b8ea8;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+    box-shadow: 0 0 0 2px #01b4e4;
+}
+
+#contact-form textarea {
+    height: 125px;
+    resize: vertical;
+}
+
+#contact-form button {
+    background-color: #01b4e4;
+    color: #032541;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    padding: 11px 30px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #0099c4;
 }
